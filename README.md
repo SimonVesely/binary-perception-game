@@ -7,6 +7,9 @@
 * Jan Ručka
 * Simon Veselý
 
+67
+67
+
 ## Abstract
 
 The Binary Perception Game is a fast-paced educational FPGA project that trains players to quickly convert a random decimal number (1–255) into its 8-bit binary equivalent. The game runs on the Nexys A7 board and uses a free-running background counter to generate the target number. In the idle phase the displays show zeros (or the time of the last successful round) and wait for the user to press the btnu button. Once started, the frozen decimal number appears on the left four 7-segment displays while the player sets the binary value with switches sw0–7. The current input value is shown in real time on the right four 7-segment displays. When the binary combination matches the target, the game automatically returns to the idle phase and displays the elapsed time. LEDs light up to indicate active switches during gameplay. The project demonstrates key digital design concepts including counters, finite state machines, 7-segment decoding, real-time comparison logic, and simple timing measurement.
