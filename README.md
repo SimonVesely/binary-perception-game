@@ -45,3 +45,8 @@ stateDiagram-v2
     [*] --> IDLE
     IDLE --> GAME : btnu pressed
     GAME --> IDLE : correct binary input
+
+```
+## License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
