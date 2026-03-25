@@ -20,8 +20,10 @@ The main contributions of the project are:
 
 ## Hardware description of demo application
 
-The demo runs on the **Nexys A7-100T** FPGA board and uses only on-board peripherals:
+The demo runs on the **Nexys A7-50T** FPGA board and uses only on-board peripherals:
+![Nexys A7 Board](images/nexys-a7-50t-board.png)
 
+*Note: The image shows the Nexys A7 board used in the project.*
 * **sw[7:0]** – 8-bit binary input from the user
 * **btnu** – start / restart button
 * **8× 7-segment displays** – left four show the target decimal number, right four show the current switch value (decimal)
