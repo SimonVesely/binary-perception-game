@@ -1,13 +1,13 @@
 # Binary Perception Game (Binární postřehovka)
 
 ## Goals:
-1.week
+1. **Week**
 - Create top-down and FSM scheme + create and test components (timer...)
-2.week
+2. **Week**
 - Component and Top testing on board Nexys A7-50T, debug
-3.week
+3. **Week**
 - Test functionality on board Nexys A7-50T, debug + Adding bonus functions
-4.week
+4. **Week**
 - Creating poster, video and presentation
 ## Team members
 
