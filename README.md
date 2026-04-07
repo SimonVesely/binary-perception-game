@@ -37,6 +37,7 @@ The demo runs on the **Nexys A7-50T** FPGA board and uses only on-board peripher
 * **btnu** – start / restart button
 * **8× 7-segment displays** – left four show the target decimal number, right four show the current switch value (decimal)
 * **LEDs** – indicate which switches are currently active (1 = on)
+![Scheme](images/schema.png)
 
 **Top-level schematic description**  
 The top module (`binary_perception_top.vhd`) instantiates:
