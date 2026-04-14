@@ -1,0 +1,57 @@
+# Main Vivado project generated folders
+src/project/Binary_Perception_Game.cache/
+src/project/Binary_Perception_Game.runs/
+src/project/Binary_Perception_Game.sim/
+src/project/Binary_Perception_Game.hw/
+src/project/Binary_Perception_Game.ip_user_files/
+src/project/Binary_Perception_Game.gen/
+src/project/.Xil/
+
+# Log, journal, and temporary files
+src/project/*.jou
+src/project/*.log
+src/project/*.str
+src/project/webtalk.*
+src/project/*.backup.*
+src/project/*.rpt
+src/project/*.pb
+src/project/*.rpx
+src/project/*.wdf
+src/project/*.wpc
+src/project/*.xml
+
+# Checkpoints and synthesis/implementation files
+src/project/*.dcp
+
+# Simulation files
+src/project/*.wcfg
+src/project/xsim.dir/
+src/project/xelab.*
+src/project/xvlog.*
+src/project/xvhdl.*
+
+# Other junk
+src/project/*.tmp
+src/project/*~
+src/project/.DS_Store
+
+# Main Vivado project file
+!src/project/Binary_Perception_Game.xpr
+
+# Constraint files
+!src/project/Binary_Perception_Game.srcs/constrs_1/**
+
+# Source VHDL files
+!src/project/Binary_Perception_Game.srcs/sources_1/**
+
+# Our custom components
+!src/components_from_lab/**
+
+# Keep specific source files (in case of nested imports)
+!src/project/Binary_Perception_Game.srcs/sources_1/new/*.vhd
+!src/project/Binary_Perception_Game.srcs/sources_1/imports/**/*.vhd
+
+# Documentation and images
+!README.md
+!LICENSE
+!images/
