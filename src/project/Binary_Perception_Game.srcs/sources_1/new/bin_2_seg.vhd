@@ -21,7 +21,7 @@ begin
              when "0111" => seg_out <= "0001111"; -- 7
              when "1000" => seg_out <= "0000000"; -- 8
              when "1001" => seg_out <= "0000100"; -- 9
-             when others => seg_out <= "1111111"; -- Zhasnuto
+             when others => seg_out <= "1111111"; -- off
          end case;
      end process;
 end Behavioral;
