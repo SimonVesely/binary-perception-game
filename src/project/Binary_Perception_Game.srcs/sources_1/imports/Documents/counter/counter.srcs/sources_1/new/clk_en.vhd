@@ -32,35 +32,26 @@ use IEEE.numeric_std.ALL;
 --use UNISIM.VComponents.all;
 
 entity clk_en is
-    generic (G_MAX : positive := 5);
     Port ( clk : in STD_LOGIC;
            rst : in STD_LOGIC;
-           ce : out STD_LOGIC);
+           ce_1ms : out STD_LOGIC);
 end clk_en;
 
 architecture Behavioral of clk_en is
-
-    signal sig_cnt : integer range 0 to G_MAX -1;
+signal s_cnt : unsigned(16 downto 0) := (others => '0');
 begin
-
-    snch_process : process (clk) is 
-    begin
-    
+    process(clk) begin
         if rising_edge(clk) then
-        if rst  = '1' then 
-            sig_cnt <= 0;
-            ce <= '0'; 
-            
-        elsif sig_cnt = G_MAX-1 then 
-        sig_cnt <= 0;
-        ce <= '1';
-        else
-        sig_cnt <= sig_cnt + 1;
-        ce <= '0';  
-        
-        
-        end if;
+            if rst = '1' then
+                s_cnt <= (others => '0'); ce_1ms <= '0';
+            else
+                ce_1ms <= '0';
+                if s_cnt = 100000 - 1 then
+                    s_cnt <= (others => '0'); ce_1ms <= '1';
+                else
+                    s_cnt <= s_cnt + 1;
+                end if;
+            end if;
         end if;
     end process;
-
 end Behavioral;

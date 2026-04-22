@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
-entity Display_Mux is
+entity Multiplexor is
     Port ( clk : in STD_LOGIC;
            ce_1ms : in STD_LOGIC;
            show_time : in STD_LOGIC;
@@ -15,9 +15,9 @@ entity Display_Mux is
            an : out STD_LOGIC_VECTOR (7 downto 0);
            mux_out : out STD_LOGIC_VECTOR (3 downto 0);
            dp: out std_logic);
-end Display_Mux;
+end Multiplexor;
 
-architecture Behavioral of Display_Mux is
+architecture Behavioral of Multiplexor is
      signal cnt : unsigned(2 downto 0) := "000";
 begin
     process(clk) begin
