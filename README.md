@@ -82,6 +82,8 @@ The project demonstrates:
 
 ### Top-Level Block Diagram
 
+![Block Scheme](images/scheme.png)
+
 ### FSM State Diagram
 
 ```mermaid
