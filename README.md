@@ -82,7 +82,7 @@ The project demonstrates:
 
 ### Top-Level Block Diagram
 
-![Block Scheme](images/Binary_Perception_Game_Scheme.jpg)
+![Block Scheme](images/Binary_Perception_Game_Scheme.drawio.png)
 
 ### FSM State Diagram
 
