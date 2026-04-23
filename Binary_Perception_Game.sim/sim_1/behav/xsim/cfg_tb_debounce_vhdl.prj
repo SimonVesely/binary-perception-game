@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Binary_Perception_Game.srcs/sources_1/imports/Documents/debounce/debounce.srcs/sources_1/new/debounce.vhd" \
+"../../../../Binary_Perception_Game.srcs/sim_1/new/debounce_tb.vhd" \
+
+# Do not sort compile order
+nosort

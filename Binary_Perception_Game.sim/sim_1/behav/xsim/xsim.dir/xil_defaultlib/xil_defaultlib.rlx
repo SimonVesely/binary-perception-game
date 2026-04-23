@@ -1,0 +1,19 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sim_1/new/Main_Game_Logic_tb.vhd,1776688327,vhdl,,,,cfg_tb_main_game_logic;tb_main_game_logic,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sim_1/new/Multiplexor_tb.vhd,1776688626,vhdl,,,,cfg_tb_multiplexor;tb_multiplexor,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sim_1/new/bin_2_bcd_tb.vhd,1776689102,vhdl,,,,cfg_tb_bin_2_bcd;tb_bin_2_bcd,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sim_1/new/bin_2_seg_tb.vhd,1776688846,vhdl,,,,cfg_tb_bin_2_seg;tb_bin_2_seg,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sim_1/new/clk_en_tb.vhd,1776687763,vhdl,,,,cfg_tb_clk_en;tb_clk_en,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sim_1/new/counter_tb.vhd,1776689396,vhdl,,,,cfg_tb_counter;tb_counter,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sim_1/new/debounce_tb.vhd,1776689735,vhdl,,,,cfg_tb_debounce;tb_debounce,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/imports/Documents/counter/counter.srcs/sources_1/new/clk_en.vhd,1776273615,vhdl,,,,clk_en,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/imports/Documents/counter/counter.srcs/sources_1/new/counter.vhd,1776273662,vhdl,,,,counter,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/imports/Documents/debounce/debounce.srcs/sources_1/new/debounce.vhd,1776273662,vhdl,,,,debounce,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/Binary_Perception_Game.vhd,1775664175,vhdl,,,,binary_perception_game_top,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/Main_Game_logic.vhd,1776273662,vhdl,,,,main_game_logic,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/Multiplexor.vhd,1776685876,vhdl,,,,multiplexor,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/bin_2_bcd.vhd,1776273662,vhdl,,,,bin_2_bcd,,,,,,,,
+C:/Users/user/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/bin_2_seg.vhd,1776685907,vhdl,,,,bin_2_seg,,,,,,,,
