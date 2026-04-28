@@ -81,6 +81,8 @@ The project demonstrates:
 
 ## Architecture
 
+📄 **[`Binary_Perception_Game.srcs/sources_1/README.md`](Binary_Perception_Game.srcs/sources_1/README.md)**
+
 ### Top-Level Block Diagram
 
 ![Block Scheme](images/Binary_Perception_Game_Scheme_komplet.png)

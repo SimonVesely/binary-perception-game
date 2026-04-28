@@ -2,7 +2,7 @@
 
 This directory contains VHDL behavioural testbenches for every synthesisable component of the Binary Perception Game. All simulations run in **Vivado XSim**. Pre-configured Tcl launch scripts and saved waveform databases (`.wdb`) are stored in `Binary_Perception_Game.sim/sim_1/behav/xsim/`.
 
-📁 [Root README](../../../README.md) · 📁 [Sources README](../../sources_1/new/README.md)
+📁 [Root README](../../../README.md) · 📁 [Sources README](../../sources_1/README.md)
 
 ---
 
