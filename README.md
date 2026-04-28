@@ -15,6 +15,7 @@
   - [Top-Level Block Diagram](#top-level-block-diagram)
   - [FSM State Diagram](#fsm-state-diagram)
   - [Component Descriptions](#component-descriptions)
+- [Simulation](#simulation)
 - [Display Layout](#display-layout)
 - [Project Structure](#project-structure)
 - [License](#license)
@@ -159,6 +160,24 @@ During `S_RUN` the **right side** shows the player's live switch value in decima
 #### `bin_2_seg.vhd` — BCD to 7-Segment Decoder
 Look-up table mapping 4-bit BCD (0–9) to the 7-segment encoding for the Nexys A7's **common-anode** display (active-low segments). Any input outside 0–9 maps to `1111111` (all segments off), used as the blank state.
 
+---
+
+## Simulation
+ 
+All seven components have dedicated XSim behavioural testbenches with waveform captures. See the full simulation documentation — including waveform screenshots, stimulus sequences, and expected output tables — in the sim directory README:
+ 
+📄 **[`Binary_Perception_Game.srcs/sim_1/new/README.md`](Binary_Perception_Game.srcs/sim_1/new/README.md)**
+ 
+| Testbench | Waveform |
+|-----------|---------|
+| `clk_en_tb` | ![clk_en](images/clk_en_tb.png) |
+| `counter_tb` | ![counter](images/counter_tb.png) |
+| `debounce_tb` | ![debounce](images/debounce_tb.png) |
+| `bin_2_bcd_tb` | ![bin_2_bcd](images/bin_2_bcd_tb.png) |
+| `bin_2_seg_tb` | ![bin_2_seg](images/bin_2_seg_tb.png) |
+| `Main_Game_Logic_tb` | ![Main_Game_Logic](images/Main&#32;game&#32;logic_tb.png) |
+| `Multiplexor_tb` | ![Multiplexor](images/multiplexor_tb.png) |
+ 
 ---
 
 ## Display Layout
