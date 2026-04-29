@@ -40,8 +40,8 @@ The project demonstrates:
 | Name | Role |
 |------|------|
 | **Adam Uhlíř** |Main Programming Designer|
-| **Gabriel Novák** |RTL Scheme + Debbuging|
-| **Jan Ručka** |Presentation & Poster|
+| **Gabriel Novák** |RTL Scheme + Debugging|
+| **Jan Ručka** |Presentation & Debugging|
 | **Simon Veselý** |GitHub Maintainer + Testbenches|
 
 *Project developed as part of a BPC-DE1 digital electronics 1 course(VUT-FEKT) — 2026.*
