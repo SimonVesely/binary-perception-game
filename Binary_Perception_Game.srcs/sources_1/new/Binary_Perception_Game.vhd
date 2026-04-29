@@ -16,7 +16,13 @@ entity Binary_Perception_Game_Top is
         led        : out STD_LOGIC_VECTOR (7 downto 0);   
         seg : out STD_LOGIC_VECTOR (6 downto 0);      
         dp         : out STD_LOGIC;                        
-        an         : out STD_LOGIC_VECTOR (7 downto 0)    
+        an         : out STD_LOGIC_VECTOR (7 downto 0);    
+        led16_r : out STD_LOGIC;
+        led16_g : out STD_LOGIC;
+        led16_b : out STD_LOGIC;
+        led17_r : out STD_LOGIC;
+        led17_g : out STD_LOGIC;
+        led17_b : out STD_LOGIC
     );
 end Binary_Perception_Game_Top;
 
@@ -107,6 +113,9 @@ architecture Behavioral of Binary_Perception_Game_Top is
   signal s_sw_h, s_sw_t, s_sw_u : std_logic_vector(3 downto 0);
   signal s_mux_h, s_mux_t, s_mux_u : std_logic_vector(3 downto 0);
 
+  -- RGB led signal
+  signal s_in_run : std_logic := '0';
+
 
 begin
     -- Inverting Nexys default reset
@@ -133,8 +142,27 @@ begin
         end if;
     end process;
 
-    
+    -- RGB led process
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if s_rst = '1' then
+                s_in_run <= '0';
+            elsif s_target_en = '1' then   
+                s_in_run <= '1';
+            elsif s_show_time = '1' then  
+                s_in_run <= '0';
+            end if;
+        end if;
+    end process;
 
+    led16_r <= '0' when s_in_run    = '1' else '1';
+    led16_g <= '0' when s_show_time = '1' else '1';
+    led16_b <= '1' when (s_in_run = '1' or s_show_time = '1') else '0';
+
+    led17_r <= led16_r;
+    led17_g <= led16_g;
+    led17_b <= led16_b;
 
 
 
