@@ -1,9 +1,9 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc rfile:../../../Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc id:1} [current_design]
-set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc rfile:../../../Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3 IOSTANDARD LVCMOS33 } [get_ports {clk}];
-set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN N17 IOSTANDARD LVCMOS33 } [get_ports {btnc}];
-set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN M17 IOSTANDARD LVCMOS33 } [get_ports {btnr}];
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN C12 IOSTANDARD LVCMOS33 } [get_ports {rst}];
@@ -71,3 +71,9 @@ set_property src_info {type:XDC file:1 line:71 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN K2  [get_ports {an[6]}];
 set_property src_info {type:XDC file:1 line:72 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U13 [get_ports {an[7]}];
+set_property src_info {type:XDC file:1 line:78 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN N15 IOSTANDARD LVCMOS33 } [get_ports { led16_r }];
+set_property src_info {type:XDC file:1 line:79 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN M16 IOSTANDARD LVCMOS33 } [get_ports { led16_g }];
+set_property src_info {type:XDC file:1 line:80 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R12 IOSTANDARD LVCMOS33 } [get_ports { led16_b }];

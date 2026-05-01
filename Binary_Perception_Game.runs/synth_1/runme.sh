@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.runs/synth_1'
+HD_PWD='C:/Users/271012/Downloads/project/Binary_Perception_Game.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

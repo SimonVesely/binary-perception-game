@@ -1,3 +1,6 @@
+-- Component functioning as converor from binary input to bcd output
+-- Was partially made using Claude AI
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;

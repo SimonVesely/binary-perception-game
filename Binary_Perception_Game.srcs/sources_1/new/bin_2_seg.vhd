@@ -1,3 +1,6 @@
+-- Component functioning as convertor of binary input to segment anode output
+-- Was partially made using Claude AI
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

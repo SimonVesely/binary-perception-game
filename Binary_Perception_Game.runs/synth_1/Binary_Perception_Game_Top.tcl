@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.runs/synth_1/Binary_Perception_Game_Top.tcl"
+  variable script "C:/Users/271012/Downloads/project/Binary_Perception_Game.runs/synth_1/Binary_Perception_Game_Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -68,23 +68,23 @@ create_project -in_memory -part xc7a50ticsg324-1L
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.cache/wt [current_project]
-set_property parent.project_path C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/271012/Downloads/project/Binary_Perception_Game.cache/wt [current_project]
+set_property parent.project_path C:/Users/271012/Downloads/project/Binary_Perception_Game.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.cache/ip [current_project]
+set_property ip_output_repo c:/Users/271012/Downloads/project/Binary_Perception_Game.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/Main_Game_logic.vhd
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/Multiplexor.vhd
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/bin_2_bcd.vhd
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/bin_2_seg.vhd
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/imports/Documents/counter/counter.srcs/sources_1/new/clk_en.vhd
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/imports/Documents/counter/counter.srcs/sources_1/new/counter.vhd
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/imports/Documents/debounce/debounce.srcs/sources_1/new/debounce.vhd
-  C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/sources_1/new/Binary_Perception_Game.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/new/Main_Game_logic.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/new/Multiplexor.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/new/bin_2_bcd.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/new/bin_2_seg.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/imports/Documents/counter/counter.srcs/sources_1/new/clk_en.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/imports/Documents/counter/counter.srcs/sources_1/new/counter.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/imports/Documents/debounce/debounce.srcs/sources_1/new/debounce.vhd
+  C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/sources_1/new/Binary_Perception_Game_Top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -95,12 +95,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc
-set_property used_in_implementation false [get_files C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc]
+read_xdc C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc
+set_property used_in_implementation false [get_files C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/constrs_1/new/nexys.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/271012/Downloads/Binary_Perception_Game/Binary_Perception_Game.srcs/utils_1/imports/synth_1/debounce.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/271012/Downloads/project/Binary_Perception_Game.srcs/utils_1/imports/synth_1/debounce.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

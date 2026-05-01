@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Wed Apr 22 19:18:08 2026
+| Date         : Wed Apr 29 19:10:54 2026
 | Host         : PC-708 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Binary_Perception_Game_Top_methodology_drc_routed.rpt -pb Binary_Perception_Game_Top_methodology_drc_routed.pb -rpx Binary_Perception_Game_Top_methodology_drc_routed.rpx
 | Design       : Binary_Perception_Game_Top
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 27
+             Checks found: 30
 +-----------+----------+-------------------------------+--------+
 | Rule      | Severity | Description                   | Checks |
 +-----------+----------+-------------------------------+--------+
-| TIMING-18 | Warning  | Missing input or output delay | 27     |
+| TIMING-18 | Warning  | Missing input or output delay | 30     |
 +-----------+----------+-------------------------------+--------+
 
 2. REPORT DETAILS
@@ -134,35 +134,50 @@ Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on seg[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on led16_b relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on seg[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on led16_g relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on seg[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on led16_r relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
-An output delay is missing on seg[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on seg[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#25 Warning
 Missing input or output delay  
-An output delay is missing on seg[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on seg[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#26 Warning
 Missing input or output delay  
-An output delay is missing on seg[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on seg[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on seg[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on seg[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#30 Warning
 Missing input or output delay  
 An output delay is missing on seg[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1776878217" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/debounce.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1777482582" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/debounce.dcp">
   <File Type="PA-TCL" Name="Binary_Perception_Game_Top.tcl"/>
   <File Type="REPORTS-TCL" Name="Binary_Perception_Game_Top_reports.tcl"/>
   <File Type="RDS-RDS" Name="Binary_Perception_Game_Top.vds"/>
@@ -11,13 +11,6 @@
   <File Type="VDS-TIMING-PB" Name="Binary_Perception_Game_Top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/bin2bcd.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/Main_Game_logic.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -66,7 +59,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Binary_Perception_Game.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Binary_Perception_Game_Top.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

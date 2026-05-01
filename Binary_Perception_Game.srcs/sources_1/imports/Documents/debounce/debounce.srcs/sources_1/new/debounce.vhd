@@ -1,35 +1,8 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 03/25/2026 06:02:24 PM
--- Design Name: 
--- Module Name: debounce - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
+-- Debounce component from lab
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity debounce is
     Port ( clk : in STD_LOGIC;
@@ -50,7 +23,7 @@ begin
                 s_sync <= "00"; s_cnt <= (others => '0'); s_debounced <= '0'; s_prev <= '0';
             else
                 s_sync <= s_sync(0) & btn_in;
-                if s_cnt = 100000 - 1 then -- cca 1ms vzorkování
+                if s_cnt = 100000 - 1 then 
                     s_debounced <= s_sync(1);
                     s_cnt <= (others => '0');
                 else s_cnt <= s_cnt + 1; end if;
