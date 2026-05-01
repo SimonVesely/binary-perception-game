@@ -4,7 +4,7 @@ This directory contains all synthesisable VHDL source files for the Binary Perce
 
 For the full project description, game rules and architecture overview see the [root README](../../README.md).
 
-📁 [Root README](../../../README.md) · 📁 [Simulations README](../../sim_1/new/README.md)
+📁 [Root README](../../../README.md) · 📁 [Simulations README](../sim_1/new/README.md)
 ---
 
 ## Files in `new/`
