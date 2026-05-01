@@ -18,6 +18,7 @@
 - [Simulation](#simulation)
 - [Project Statistics](#project-statistics)
 - [Display Layout](#display-layout)
+- [RGB LED State Indicator](#rgb-led-state-indicator)
 - [Project Structure](#project-structure)
 - [License](#license)
 
@@ -236,6 +237,61 @@ S_RUN : Right = current SW value in decimal
 S_WIN : Right = elapsed time  │  Left = target number (revealed!)
 ```
 
+---
+
+## RGB LED State Indicator
+ 
+The on-board RGB LED **LD16** gives an instant visual indication of the current FSM state — no need to look at the display to know what the game is doing.
+ 
+| FSM State | Colour | Meaning |
+|-----------|:------:|---------|
+| S_IDLE | 🟡 **Yellow** | Waiting for player to press BTNC |
+| S_GEN  | 🟡 **Yellow** | Target being latched (1 clock cycle, imperceptible) |
+| S_RUN  | 🔴 **Red** | Game in progress — timer running |
+| S_WIN  | 🟢 **Green** | Correct! Elapsed time displayed |
+ 
+Yellow is produced by turning the **red and green** channels on simultaneously with the blue channel off. The LED is common-anode (active-low), so `'0'` = ON and `'1'` = OFF.
+ 
+The logic in `Binary_Perception_Game_Top.vhd` (purely combinational, derived from the two signals already exposed by `Main_Game_logic`):
+ 
+> **Note:** Only LD16 is used. LD17 is left undriven (off), because of brightness.
+ 
+---
+
+## RGB LED State Indicator
+ 
+The on-board RGB LED **LD16** gives an instant visual indication of the current FSM state — no need to look at the display to know what the game is doing.
+ 
+| FSM State | Colour | Meaning |
+|-----------|:------:|---------|
+| S_IDLE | 🟡 **Yellow** | Waiting for player to press BTNC |
+| S_GEN  | 🟡 **Yellow** | Target being latched (1 clock cycle, imperceptible) |
+| S_RUN  | 🔴 **Red** | Game in progress — timer running |
+| S_WIN  | 🟢 **Green** | Correct! Elapsed time displayed |
+ 
+Yellow is produced by turning the **red and green** channels on simultaneously with the blue channel off. The LED is common-anode (active-low), so `'0'` = ON and `'1'` = OFF.
+ 
+The logic in `Binary_Perception_Game_Top.vhd` (purely combinational, derived from the two signals already exposed by `Main_Game_logic`):
+ 
+```vhdl
+-- s_in_run is set by a registered process:
+--   '1' when S_GEN pulse seen (-> S_RUN next cycle)
+--   '0' when S_WIN reached or reset
+ 
+-- Colour truth table (active-low: '0' = ON)
+--           S_IDLE/S_GEN    S_RUN    S_WIN
+-- led16_r:     ON            OFF      OFF    ← R on = yellow + red
+-- led16_g:     ON            ON       OFF    ← G on = yellow + red... 
+-- led16_b:     OFF           OFF      OFF
+ 
+led16_g <= '0' when s_in_run    = '1' else '1';  -- ON in S_RUN
+led16_r <= '0' when s_show_time = '1' else '1';  -- ON in S_WIN
+led16_b <= '0' when (s_in_run = '0' or s_show_time = '0') else '1';
+```
+ 
+> **Note:** Only LD16 is used. LD17 is left undriven (off).
+ 
+---
 ---
 
 ## Project Structure
