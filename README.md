@@ -16,6 +16,7 @@
   - [FSM State Diagram](#fsm-state-diagram)
   - [Component Descriptions](#component-descriptions)
 - [Simulation](#simulation)
+- [Project Statistics](#project-statistics)
 - [Display Layout](#display-layout)
 - [Project Structure](#project-structure)
 - [License](#license)
@@ -182,6 +183,39 @@ All seven components have dedicated XSim behavioural testbenches with waveform c
  
 ---
 
+## Project Statistics
+ 
+Post-implementation results from Vivado 2025.2, targeting `xc7a50ticsg324-1L`.
+ 
+### Timing
+ 
+![Timing Summary](images/Timing.png)
+ 
+| Metric | Value |
+|--------|-------|
+| **Worst Negative Slack (WNS)** | 4.887 ns |
+| **Total Negative Slack (TNS)** | 0 ns |
+| **Failing Endpoints** | 0 |
+| **Total Endpoints** | 142 |
+ 
+Timing is fully met — WNS of 4.887 ns means the critical path runs at ~67 MHz, well within the 100 MHz clock constraint. Zero failing endpoints confirms the design is clean with no setup violations.
+ 
+### Resource Utilization
+ 
+![Utilization Graph](images/Utilization_graph.png)
+ 
+![Utilization Table](images/Utilization_table.png)
+ 
+| Resource | Used | Available | Utilization |
+|----------|-----:|----------:|------------:|
+| **LUT** | 194 | 32 600 | 0.60% |
+| **FF** | 80 | 65 200 | 0.12% |
+| **IO** | 39 | 210 | 18.57% |
+| **BUFG** | 1 | 32 | 3.13% |
+ 
+The design is extremely lightweight — under 1% of LUTs and FFs. The IO utilization (18.57%) is the dominant resource, driven by the 8 switches, 8 LEDs, 8 anode signals, 7 segment outputs, decimal point, 2 buttons, reset, clock, and 3 RGB LED pins. A single BUFG drives the global 100 MHz clock net.
+ 
+---
 ## Display Layout
 
 ```
