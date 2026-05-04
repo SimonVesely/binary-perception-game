@@ -13,7 +13,7 @@
 
 ## Video Demonstration
 
-![Video demonstration](video_demo/DE1_video.mp4)
+<video src="https://raw.githubusercontent.com/SimonVesely/binary-perception-game/main/video_demo/DE1_video.mp4" controls width="100%"></video>
 
 ---
 
