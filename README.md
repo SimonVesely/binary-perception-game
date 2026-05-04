@@ -5,6 +5,18 @@
 
 ---
 
+## Poster
+
+![Poster for project](poster/DE1_poster.png)
+
+---
+
+## Video Demonstration
+
+![Video demonstration](video_demo/DE1_video.mp4)
+
+---
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
