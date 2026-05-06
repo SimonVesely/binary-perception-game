@@ -14,9 +14,7 @@
 ## Video Demonstration
 
 <video src="https://raw.githubusercontent.com/SimonVesely/binary-perception-game/main/video_demo/DE1_video.mp4" controls width="100%"></video>
-- [📥 Download Video](https://raw.githubusercontent.com/SimonVesely/binary-perception-game/main/video_demo/DE1_video.mp4)
-- or
-- [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/KjhjzL8NtXU/0.jpg)](https://youtu.be/KjhjzL8NtXU)
+[📥 Download Video](https://raw.githubusercontent.com/SimonVesely/binary-perception-game/main/video_demo/DE1_video.mp4) or [📺 Watch on Youtube](https://youtu.be/KjhjzL8NtXU)
 
 ---
 
