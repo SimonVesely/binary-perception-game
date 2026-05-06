@@ -16,6 +16,7 @@
 <video src="https://raw.githubusercontent.com/SimonVesely/binary-perception-game/main/video_demo/DE1_video.mp4" controls width="100%"></video>
 [📥 Download Video](https://raw.githubusercontent.com/SimonVesely/binary-perception-game/main/video_demo/DE1_video.mp4)
 
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/KjhjzL8NtXU/mqdefault.jpg?sqp=CPzZ7s8G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFIgZSheMA8=&rs=AOn4CLCwXnMAqZUoLFM6JucxrgIsb6md8Q)](https://youtu.be/KjhjzL8NtXU)
 <video src="https://youtu.be/KjhjzL8NtXU" controls width="100%"></video>
 [📥 Youtube Link](https://youtu.be/KjhjzL8NtXU)
 
